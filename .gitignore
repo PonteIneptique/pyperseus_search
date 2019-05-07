@@ -1,0 +1,4 @@
+test.py
+*.sqlite
+venv/
+.idea
