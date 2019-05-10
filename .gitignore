@@ -2,3 +2,4 @@ test.py
 *.sqlite
 venv/
 .idea
+__pycache__
