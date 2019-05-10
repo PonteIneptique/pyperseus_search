@@ -69,7 +69,6 @@ def _pagination(html_content: bs4.Tag) -> Iterator[int]:
     """
     link = html_content.select(".pager a")
     if link:
-        print(link)
         uri: urllib.parse.ParseResult = urllib.parse.urlparse(link[-1].attrs["href"])
         page: str = urllib.parse.parse_qs(uri.query).get("page", [""])[-1]
         if page.isnumeric():

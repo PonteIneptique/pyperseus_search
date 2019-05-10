@@ -46,4 +46,4 @@ class Match:
         return _reput_space(" ".join([
             self._format_match(w)
             for w in self.words
-        ]))
+        ])).replace("<m atch>", " <match>")  # Because I am lazy to fix the regexp
